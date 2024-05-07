@@ -67,7 +67,7 @@ jar {
 publishing {
 	publications {
 		mavenRepo(MavenPublication) {
-			artifactId = 'slightly-improved-font-mod'
+			artifactId = 'hdfont'
 			from components.java
 		}
 	}
