@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "hdfont",
+	"version": "${version}",
+	"name": "Slightly Improved Font",
+	"authors": [
+		"Lat"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"mixins": [
+		"hdfont.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"fabric": "*",
+		"minecraft": ">=1.20.1"
+	}
+}
