@@ -10,6 +10,10 @@ version = "${mod_version}-${ENV.GITHUB_RUN_NUMBER ? 'build.' + ENV.GITHUB_RUN_NU
 group = project.maven_group
 println("Version: $group:$archives_base_name:$version")
 
+loom {
+	accessWidenerPath = file('src/main/resources/hdfont.accessWidener')
+}
+
 repositories {
 }
 

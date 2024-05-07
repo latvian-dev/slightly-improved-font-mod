@@ -25,7 +25,7 @@ public abstract class MinecraftClientMixin {
 	 */
 	@Inject(method = "initFont", at = @At("RETURN"))
 	private void hdfont$initFont(boolean unicode, CallbackInfo ci) {
-		if (HDFontsClient.override) {
+		if (HDFontsClient.getOption().getValue()) {
 			fontManager.setIdOverrides(HDFontsClient.OVERRIDES);
 		}
 	}

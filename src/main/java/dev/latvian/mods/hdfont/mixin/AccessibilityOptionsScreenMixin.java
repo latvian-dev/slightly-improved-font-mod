@@ -13,7 +13,7 @@ public class AccessibilityOptionsScreenMixin {
 	private static SimpleOption<?>[] hdfont$getOptions(SimpleOption<?>[] options) {
 		var newOptions = new SimpleOption<?>[options.length + 1];
 		System.arraycopy(options, 0, newOptions, 0, options.length);
-		newOptions[options.length] = HDFontsClient.OPTION;
+		newOptions[options.length] = HDFontsClient.getOption();
 		return newOptions;
 	}
 }
